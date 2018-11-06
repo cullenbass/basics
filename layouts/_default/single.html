@@ -5,7 +5,7 @@
     <time>{{ .Date.Format "02 Jan 2006" }}</time>
   </div>
   <div class="blog-post-content">
-    {{ .Content }}
+    {{ partial "content.html" . }}
   </div>
 </div>
 {{ end }}
